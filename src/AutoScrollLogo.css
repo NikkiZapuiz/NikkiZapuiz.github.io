@@ -1,0 +1,30 @@
+.auto-scroll-logo-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc;
+    height: 60px;
+}
+
+.auto-scroll-logo {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 20px;
+    animation: scrollLogo 40s linear infinite;
+}
+
+.auto-scroll-logo img {
+    height: 40px;
+    margin-right: 20px;
+    
+}
+
+@keyframes scrollLogo {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
